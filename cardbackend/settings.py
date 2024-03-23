@@ -17,7 +17,7 @@ import raven
 from pathlib import Path
 
 env = environ.Env(DEBUG=(bool, False))
-root = environ.Path(__file__) - 2
+root = environ.Path(__file__) - 1
 environ.Env.read_env('%s/.env' % str(root - 1))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
